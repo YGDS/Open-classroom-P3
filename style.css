@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 @media only screen and (max-width: 768px) {
@@ -221,3 +222,228 @@
     }
 
 }
+=======
+
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .main_logo {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .name_place {
+        width: 100%;
+        background-color: #d2d2cb;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-align: center;
+        box-shadow: 0 4px 10px -8px black inset;
+    }
+
+    .name_place i {
+        margin-right: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        background-color: #eaeae6;
+        padding-top: 15px;
+        padding-bottom: 40px;
+    }
+
+    nav h1 {
+        white-space: pre-line;
+        text-align: center;
+    }
+
+    nav span {
+        text-align: center;
+    }
+
+    .exploration {
+        border-radius: 25px;
+        text-align: center;
+        align-self: center;
+        border: 2px solid black;
+        margin-right: 25%;
+        margin-left: 25%;
+        margin-top: 25px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        width: 60%;
+        background-image: linear-gradient(to bottom right,rgb(222, 131, 205), #c03889);
+        border: none;
+        box-shadow: 0 2px 4px 0.1px grey;
+    }
+
+    .exploration:hover {
+        background-image: linear-gradient(to bottom right,rgb(222, 161, 205), #c14a91);
+    }
+
+    .exploration span {
+        color: white;
+    }
+
+    .how_it_work {
+        padding-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .how_it_work h2{
+        margin-left: 5%;
+    }
+
+    .hiw_list {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 10px;
+        border: 2px solid rgb(220, 220, 220);
+        margin-right: 10%;
+        margin-left: 5%;
+        padding-top: 20px;
+        padding-bottom: 15px;
+        border-radius: 16px;
+        background-color: rgb(220, 220, 220);
+        color: black;
+        box-shadow: 1px 2px 4px 0.1px rgb(202, 198, 198);
+    }
+
+    .hiw_list span {
+        font-weight: 600;
+    }
+
+    .hiw_list:hover {
+        background-color: rgb(202, 193, 195);
+        border: 2px solid rgb(202, 193, 195);
+    }
+
+    .nb {
+        border: 1px solid rgb(136, 56, 136);
+        background-color: rgb(136, 56, 136);
+        color: white;
+        padding-right: 5px;
+        padding-left: 5px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        border-radius: 50%;
+        margin-left: -10px;
+    }
+
+    .Restaurant {
+        padding-top: 20px;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 50px;
+        background-color: rgb(233, 231, 231);
+    }
+
+    .restaurant_list {
+        width: 100%;
+        height: 220px;
+        margin-bottom: 15px;
+        background-color: white;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 1px 2px 4px 0.1px rgb(202, 198, 198);
+    }
+
+    .restaurant_handler {
+        width: 100%;
+        position: relative;
+    }
+
+    .restaurant_list img {
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
+
+    }
+
+    .new {
+        font-size: 14px;
+        position: relative;
+        margin-left: 75%;
+        bottom: 65%;
+        z-index: 1;
+        border: 1px solid rgb(113, 192, 166);
+        background-color: rgb(113, 192, 166);
+        border-radius: 4px;
+        padding: 8px;
+        color: rgb(48, 93, 67);
+        
+    }
+
+    .restaurant_description {
+        display: flex;
+    }
+
+    .restau_description_text {
+        font-size: 15px;
+        position: relative;
+        top: -10px;
+        left: 2%;
+        color: black;
+    }
+
+    .restau_description_text p {
+        position: relative;
+        bottom: 15px;
+    }
+
+    .newed {
+        top: -30px
+    }
+
+    footer {
+        background-color: rgb(54, 52, 52);
+    }
+
+    .footer_logo {
+        width: 25%;
+        height: 20px;
+        margin-top: 20px;
+        margin-left: 5%;
+        margin-bottom: 10px;
+    }
+
+    .footer_handler {
+        margin-left: 5%;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_list {
+        margin-bottom: 10px;
+    }
+
+    .footer_list a {
+        color: white;
+    }
+
+    footer a {
+        margin-bottom: 10px;
+        color: white;
+    }
+
+}
+>>>>>>> 396cb6a8f9471838c12ab9b7be9cbee70b853e91

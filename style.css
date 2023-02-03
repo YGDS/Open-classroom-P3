@@ -262,7 +262,7 @@ nav span {
   width: 100%;
   display: grid;
   grid-template-columns: 45% 45%;
-  grid-row: auto auto;
+  grid-row: auto;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
 }

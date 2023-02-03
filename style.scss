@@ -9,6 +9,7 @@
     background-image: linear-gradient(to bottom right,#FF79DA , #9356DC );
 }
 
+
 body {
     width: 100%;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -317,6 +318,9 @@ footer {
     a {
         margin-bottom: 10px;
         color: white;
+        &:hover {
+            color:#9356DC;
+        }
     }
 }
 
@@ -447,9 +451,15 @@ header {
             background-color: white;
             box-shadow: 1px 2px 4px 0.1px rgb(202, 198, 198);
             &:hover {
+                .description {
+                    .f_name {
+                        animation: x_decreasing 0.6s forwards;
+
+                    }
+                }
                 .progress {
                     & > .progress__bar {
-                        transform: scaleX(0.12);
+                        transform: scaleX(0.17);
                         & > .check {
                             animation: rotating 0.5s forwards alternate linear;
                         }
@@ -457,6 +467,7 @@ header {
                 }
             }
             h3 {
+                font-weight: 600;
                 margin-top: 6px;
                 margin-bottom: 6px;
             }
@@ -470,10 +481,23 @@ header {
                 width: 97%;
 
                 span {
+
+                    padding-top: 15px;
+                    font-size: 18px;
+                }
+
+                .f_name {
+                    font-weight: 200;
+                    font-size: 3.7vw;
+                    animation: x_increasing 0.7s forwards;
+                    display: block;
+                    overflow: hidden;
                     white-space: nowrap;
                     text-overflow: ellipsis;
-                    padding-top: 15px;
-                    width: 300px;
+                }
+
+                .price {
+                    font-weight: 800;
                 }
             }
         
@@ -481,6 +505,23 @@ header {
     }
 }
 
+@keyframes x_decreasing {
+    0% {
+        width: 85%;
+    }
+    100% {
+        width: 65%;
+    }
+}
+
+@keyframes x_increasing {
+    0% {
+        width: 65%;
+    }
+    100% {
+        width: 85%;
+    }
+}
 
 .progress {
     position: absolute;
@@ -502,58 +543,28 @@ header {
             color: white;
             display: grid;
             place-content: center;
-            transform: scale(15, 1.5);
+            transform: scale(10, 1.5);
         }
     }
 }
 
 
+
 @keyframes rotating {
 
-    0% { transform: scale(15, 1.5) rotate(0deg)}
-    100% { transform: scale(15, 1.5) rotate(360deg)}
+    0% { transform: scale(10, 1.5) rotate(0deg)}
+    100% { transform: scale(10, 1.5) rotate(360deg)}
 }
 
-.first {
-    opacity: 0;
-    animation: fadeIn forwards;
-    animation-duration: 0.5s;
-    animation-delay: 0.5s;
-}
-
-.second {
-    opacity: 0;
-    animation: fadeIn forwards;
-    animation-duration: 0.5s;
-    animation-delay: 1s;
-}
-
-.third {
-    opacity: 0;
-    animation: fadeIn forwards;
-    animation-duration: 0.5s;
-    animation-delay: 1.5s;
-}
-
-.fourth {
-    opacity: 0;
-    animation: fadeIn forwards;
-    animation-duration: 0.5s;
-    animation-delay: 2s;
-}
-
-.fith {
-    opacity: 0;
-    animation: fadeIn forwards;
-    animation-duration: 0.5s;
-    animation-delay: 2.5s;
-}
-
-.sixth {
-    opacity: 0;
-    animation: fadeIn forwards;
-    animation-duration: 0.5s;
-    animation-delay: 3s;
+@for $i from 1 through 9 {
+    .menu_part {
+        &__#{$i}{
+            opacity: 0;
+            animation: fadeIn forwards;
+            animation-duration: 0.5s;
+            animation-delay: 0.5s*$i;
+        }
+    }
 }
 
 @keyframes fadeIn {
@@ -594,6 +605,7 @@ header {
     .how_it_work {
         display: grid;
         place-content: center;
+        padding-bottom: 6%;
         h2 {
             display: grid;
             place-content: center;
@@ -601,6 +613,7 @@ header {
     }
 
     .hiw_list {
+        margin-bottom: 20px;
         width: 400px;
         .step {
             i {
@@ -611,6 +624,15 @@ header {
 
     .Restaurant {
         padding-bottom: 205px;
+        h2 {
+            text-align: center;
+            font-size: 50px;
+            text-decoration-line: underline;
+            text-decoration-color: #99E2D0;
+        }
+        .restaurant_handler {
+            padding-top: 6%;
+        }
     }
 
     .menu_handler {
@@ -622,8 +644,17 @@ header {
         ul {
             li {
                 width: 400px;
+                .description {
+                    .f_name {
+                        font-size: 1.05vw;
+                    }
+                }
             }
         }
+    }
+
+    footer {
+        height: 80%;
     }
 }
 
@@ -710,15 +741,15 @@ header {
     .progress {
         &__bar {
             .check {
-                transform: scale(8, 1.2);
+                transform: scale(9, 1.2);
             }
         }
     }
 
     @keyframes rotating {
 
-        0% { transform: scale(8, 1.2) rotate(0deg)}
-        100% { transform: scale(8, 1.2) rotate(360deg)}
+        0% { transform: scale(9, 1.2) rotate(0deg)}
+        100% { transform: scale(9, 1.2) rotate(360deg)}
     }
 
     

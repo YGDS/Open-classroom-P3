@@ -4,7 +4,6 @@ body {
   width: 100%;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   margin: 0;
-  overflow-x: hidden;
 }
 body .loader-wrapper {
   z-index: 1;
@@ -489,7 +488,7 @@ header .main_picture {
 }
 .menu_part ul li .description .f_name {
   font-weight: 200;
-  font-size: 3.7vw;
+  font-size: 15px;
   -webkit-animation: x_increasing 0.7s forwards;
           animation: x_increasing 0.7s forwards;
   display: block;
@@ -745,7 +744,7 @@ header .main_picture {
     width: 400px;
   }
   .menu_part ul li .description .f_name {
-    font-size: 1.05vw;
+    font-size: 17px;
   }
   footer {
     height: 80%;

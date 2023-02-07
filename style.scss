@@ -14,7 +14,6 @@ body {
     width: 100%;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     margin: 0;
-    overflow-x: hidden;
 
     .loader-wrapper {
         z-index: 1;
@@ -488,7 +487,7 @@ header {
 
                 .f_name {
                     font-weight: 200;
-                    font-size: 3.7vw;
+                    font-size: 15px;
                     animation: x_increasing 0.7s forwards;
                     display: block;
                     overflow: hidden;
@@ -646,7 +645,7 @@ header {
                 width: 400px;
                 .description {
                     .f_name {
-                        font-size: 1.05vw;
+                        font-size: 17px;
                     }
                 }
             }

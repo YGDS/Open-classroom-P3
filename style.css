@@ -288,27 +288,6 @@ nav span {
   transform: scale(0, 0.1);
 }
 
-@-webkit-keyframes filler {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-    -webkit-animation-play-state: paused;
-            animation-play-state: paused;
-  }
-}
-
-@keyframes filler {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-    -webkit-animation-play-state: paused;
-            animation-play-state: paused;
-  }
-}
 .restau_description_text {
   font-size: 15px;
   position: relative;

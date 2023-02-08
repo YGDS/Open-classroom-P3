@@ -18,8 +18,7 @@ body .loader-wrapper {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  -webkit-animation: fadeOut 2.5s forwards;
-          animation: fadeOut 2.5s forwards;
+  animation: fadeOut 2.5s forwards;
 }
 body .loader-wrapper .loader {
   display: inline-block;
@@ -28,31 +27,12 @@ body .loader-wrapper .loader {
   border-radius: 10px;
   position: relative;
   border: 10px solid #99E2D0;
-  -webkit-animation: loader 2s infinite;
-          animation: loader 2s infinite;
+  animation: loader 2s infinite;
 }
 body .loader-wrapper .loading {
   font-family: "Shrikhand";
   color: black;
   font-size: 50px;
-}
-
-@-webkit-keyframes loader {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(180deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  75% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 @keyframes loader {
@@ -70,15 +50,6 @@ body .loader-wrapper .loading {
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    visibility: hidden;
   }
 }
 @keyframes fadeOut {
@@ -284,7 +255,9 @@ nav span {
 }
 .restaurant_description .hov {
   bottom: 40px;
-  color: #9356DC;
+  background: -webkit-linear-gradient(bottom, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   transform: scale(0, 0.1);
 }
 
@@ -385,7 +358,7 @@ header .main_picture {
 .menu_list .list_title {
   margin-left: 5%;
   font-size: large;
-  display: flex;
+  display: inline-block;
   gap: 35%;
 }
 .menu_list .list_title h1 {
@@ -407,7 +380,9 @@ header .main_picture {
 }
 .menu_list .list_title .hov {
   transform-origin: bottom;
-  color: #9356DC;
+  background: -webkit-linear-gradient(bottom, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   transform: scale(0, 0.1);
 }
 
@@ -438,15 +413,13 @@ header .main_picture {
   box-shadow: 1px 2px 4px 0.1px rgb(202, 198, 198);
 }
 .menu_part ul li:hover .description .f_name {
-  -webkit-animation: x_decreasing 0.6s forwards;
-          animation: x_decreasing 0.6s forwards;
+  animation: x_decreasing 0.6s forwards;
 }
 .menu_part ul li:hover .progress > .progress__bar {
   transform: scaleX(0.17);
 }
 .menu_part ul li:hover .progress > .progress__bar > .check {
-  -webkit-animation: rotating 0.5s forwards alternate linear;
-          animation: rotating 0.5s forwards alternate linear;
+  animation: rotating 0.5s forwards alternate linear;
 }
 .menu_part ul li h3 {
   font-weight: 600;
@@ -468,8 +441,7 @@ header .main_picture {
 .menu_part ul li .description .f_name {
   font-weight: 200;
   font-size: 15px;
-  -webkit-animation: x_increasing 0.7s forwards;
-          animation: x_increasing 0.7s forwards;
+  animation: x_increasing 0.7s forwards;
   display: block;
   overflow: hidden;
   white-space: nowrap;
@@ -479,29 +451,12 @@ header .main_picture {
   font-weight: 800;
 }
 
-@-webkit-keyframes x_decreasing {
-  0% {
-    width: 85%;
-  }
-  100% {
-    width: 65%;
-  }
-}
-
 @keyframes x_decreasing {
   0% {
     width: 85%;
   }
   100% {
     width: 65%;
-  }
-}
-@-webkit-keyframes x_increasing {
-  0% {
-    width: 65%;
-  }
-  100% {
-    width: 85%;
   }
 }
 @keyframes x_increasing {
@@ -537,15 +492,6 @@ header .main_picture {
   transform: scale(10, 1.5);
 }
 
-@-webkit-keyframes rotating {
-  0% {
-    transform: scale(10, 1.5) rotate(0deg);
-  }
-  100% {
-    transform: scale(10, 1.5) rotate(360deg);
-  }
-}
-
 @keyframes rotating {
   0% {
     transform: scale(10, 1.5) rotate(0deg);
@@ -556,101 +502,65 @@ header .main_picture {
 }
 .menu_part__1 {
   opacity: 0;
-  -webkit-animation: fadeIn forwards;
-          animation: fadeIn forwards;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  animation: fadeIn forwards;
+  animation-duration: 0.5s;
+  animation-delay: 0.5s;
 }
 
 .menu_part__2 {
   opacity: 0;
-  -webkit-animation: fadeIn forwards;
-          animation: fadeIn forwards;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  animation: fadeIn forwards;
+  animation-duration: 0.5s;
+  animation-delay: 1s;
 }
 
 .menu_part__3 {
   opacity: 0;
-  -webkit-animation: fadeIn forwards;
-          animation: fadeIn forwards;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  animation: fadeIn forwards;
+  animation-duration: 0.5s;
+  animation-delay: 1.5s;
 }
 
 .menu_part__4 {
   opacity: 0;
-  -webkit-animation: fadeIn forwards;
-          animation: fadeIn forwards;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  animation: fadeIn forwards;
+  animation-duration: 0.5s;
+  animation-delay: 2s;
 }
 
 .menu_part__5 {
   opacity: 0;
-  -webkit-animation: fadeIn forwards;
-          animation: fadeIn forwards;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-delay: 2.5s;
-          animation-delay: 2.5s;
+  animation: fadeIn forwards;
+  animation-duration: 0.5s;
+  animation-delay: 2.5s;
 }
 
 .menu_part__6 {
   opacity: 0;
-  -webkit-animation: fadeIn forwards;
-          animation: fadeIn forwards;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  animation: fadeIn forwards;
+  animation-duration: 0.5s;
+  animation-delay: 3s;
 }
 
 .menu_part__7 {
   opacity: 0;
-  -webkit-animation: fadeIn forwards;
-          animation: fadeIn forwards;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-delay: 3.5s;
-          animation-delay: 3.5s;
+  animation: fadeIn forwards;
+  animation-duration: 0.5s;
+  animation-delay: 3.5s;
 }
 
 .menu_part__8 {
   opacity: 0;
-  -webkit-animation: fadeIn forwards;
-          animation: fadeIn forwards;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  animation: fadeIn forwards;
+  animation-duration: 0.5s;
+  animation-delay: 4s;
 }
 
 .menu_part__9 {
   opacity: 0;
-  -webkit-animation: fadeIn forwards;
-          animation: fadeIn forwards;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-delay: 4.5s;
-          animation-delay: 4.5s;
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  animation: fadeIn forwards;
+  animation-duration: 0.5s;
+  animation-delay: 4.5s;
 }
 
 @keyframes fadeIn {
@@ -707,10 +617,8 @@ header .main_picture {
   .Restaurant h2 {
     text-align: center;
     font-size: 50px;
-    -webkit-text-decoration-line: underline;
-            text-decoration-line: underline;
-    -webkit-text-decoration-color: #99E2D0;
-            text-decoration-color: #99E2D0;
+    text-decoration-line: underline;
+    text-decoration-color: #99E2D0;
   }
   .Restaurant .restaurant_handler {
     padding-top: 6%;
@@ -781,14 +689,6 @@ header .main_picture {
   }
   .progress__bar .check {
     transform: scale(9, 1.2);
-  }
-  @-webkit-keyframes rotating {
-    0% {
-      transform: scale(9, 1.2) rotate(0deg);
-    }
-    100% {
-      transform: scale(9, 1.2) rotate(360deg);
-    }
   }
   @keyframes rotating {
     0% {

@@ -279,7 +279,9 @@ nav {
 
     .hov {
         bottom: 40px;
-        color: #9356DC ;
+        background: -webkit-linear-gradient(bottom,#FF79DA , #9356DC);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         transform: scale(0, 0.1);
 
     }
@@ -386,7 +388,7 @@ header {
     .list_title {
         margin-left: 5%;
         font-size: large;
-        display: flex;
+        display: inline-block;
         gap: 35%;
         h1 {
             font-family: 'Shrikhand';
@@ -408,7 +410,9 @@ header {
     
         .hov {
             transform-origin: bottom;
-            color: #9356DC ;
+            background: -webkit-linear-gradient(bottom,#FF79DA , #9356DC);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             transform: scale(0, 0.1);
     
         }
